@@ -13,73 +13,73 @@ jobs:
       - name: sat check vip standing
         uses: mooyoul/melon-ticket-actions@v1.1.0
         with:
-          product-id: 212676
-          schedule-id: 100004
-          seat-id: 12215
+          product-id: "212676"
+          schedule-id: "100004"
+          seat-id: "12215"
           slack-incoming-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
           message: '막중 vip 스탠딩 잔여 떴다!'
 
-  day1-vipseated:
-    runs-on: ubuntu-latest
+  # day1-vipseated:
+  #   runs-on: ubuntu-latest
 
-    steps:
-      - name: sat check vip seated
-        uses: mooyoul/melon-ticket-actions@v1.1.0
-        with:
-          product-id: 212676
-          schedule-id: 100004
-          seat-id: 12216
-          slack-incoming-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
-          message: '막중 vip 지정석 잔여 떴다!'
+  #   steps:
+  #     - name: sat check vip seated
+  #       uses: mooyoul/melon-ticket-actions@v1.1.0
+  #       with:
+  #         product-id: 212676
+  #         schedule-id: 100004
+  #         seat-id: 12216
+  #         slack-incoming-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
+  #         message: '막중 vip 지정석 잔여 떴다!'
 
-  day1-seated:
-    runs-on: ubuntu-latest
+  # day1-seated:
+  #   runs-on: ubuntu-latest
 
-    steps:
-      - name: sat check seated
-        uses: mooyoul/melon-ticket-actions@v1.1.0
-        with:
-          product-id: 212676
-          schedule-id: 100004
-          seat-id: 12218
-          slack-incoming-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
-          message: '막중 지정석 잔여 떴다!'
+  #   steps:
+  #     - name: sat check seated
+  #       uses: mooyoul/melon-ticket-actions@v1.1.0
+  #       with:
+  #         product-id: 212676
+  #         schedule-id: 100004
+  #         seat-id: 12218
+  #         slack-incoming-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
+  #         message: '막중 지정석 잔여 떴다!'
 
-  day2-vipstanding:
-    runs-on: ubuntu-latest
+  # day2-vipstanding:
+  #   runs-on: ubuntu-latest
 
-    steps:
-      - name: sat check vip standing
-        uses: mooyoul/melon-ticket-actions@v1.1.0
-        with:
-          product-id: 212676
-          schedule-id: 100006
-          seat-id: 12215
-          slack-incoming-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
-          message: '막막 vip 스탠딩 잔여 떴다!'
+  #   steps:
+  #     - name: sat check vip standing
+  #       uses: mooyoul/melon-ticket-actions@v1.1.0
+  #       with:
+  #         product-id: 212676
+  #         schedule-id: 100006
+  #         seat-id: 12215
+  #         slack-incoming-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
+  #         message: '막막 vip 스탠딩 잔여 떴다!'
 
-  day2-vipseated:
-    runs-on: ubuntu-latest
+  # day2-vipseated:
+  #   runs-on: ubuntu-latest
 
-    steps:
-      - name: sat check vip seated
-        uses: mooyoul/melon-ticket-actions@v1.1.0
-        with:
-          product-id: 212676
-          schedule-id: 100006
-          seat-id: 12216
-          slack-incoming-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
-          message: '막막 vip 지정석 잔여 떴다!'
+  #   steps:
+  #     - name: sat check vip seated
+  #       uses: mooyoul/melon-ticket-actions@v1.1.0
+  #       with:
+  #         product-id: 212676
+  #         schedule-id: 100006
+  #         seat-id: 12216
+  #         slack-incoming-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
+  #         message: '막막 vip 지정석 잔여 떴다!'
 
-  day2-seated:
-    runs-on: ubuntu-latest
+  # day2-seated:
+  #   runs-on: ubuntu-latest
 
-    steps:
-      - name: sat check seated
-        uses: mooyoul/melon-ticket-actions@v1.1.0
-        with:
-          product-id: 212676
-          schedule-id: 100006
-          seat-id: 12218
-          slack-incoming-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
-          message: '막막 지정석 잔여 떴다!'
+  #   steps:
+  #     - name: sat check seated
+  #       uses: mooyoul/melon-ticket-actions@v1.1.0
+  #       with:
+  #         product-id: 212676
+  #         schedule-id: 100006
+  #         seat-id: 12218
+  #         slack-incoming-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
+  #         message: '막막 지정석 잔여 떴다!'
