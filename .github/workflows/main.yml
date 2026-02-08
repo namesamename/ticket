@@ -1,8 +1,8 @@
 name: Check Melon Tickets
 
 on:
-  schedule:
-    - cron: "*/1 * * * *"  # 1분마다 실행
+  # schedule:
+  #   - cron: "*/1 * * * *"  # 1분마다 실행
   workflow_dispatch:      # 수동 실행 버튼 활성화
 
 jobs:
